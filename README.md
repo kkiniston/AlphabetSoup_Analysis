@@ -1,18 +1,57 @@
 # AlphabetSoup_Analysis
+---
+Background
+Beks has come a long way since her first day at that boot camp five years ago—and since earlier this week, when she started learning about neural networks! Now, she is finally ready to put her skills to work to help the foundation predict where to make investments.
 
-#### Data Preprocessing
-----
+With your knowledge of machine learning and neural networks, you’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
+
+From Alphabet Soup’s business team, Beks received a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as the following:
+
+EIN and NAME—Identification columns
+APPLICATION_TYPE—Alphabet Soup application type
+AFFILIATION—Affiliated sector of industry
+CLASSIFICATION—Government organization classification
+USE_CASE—Use case for funding
+ORGANIZATION—Organization type
+STATUS—Active status
+INCOME_AMT—Income classification
+SPECIAL_CONSIDERATIONS—Special consideration for application
+ASK_AMT—Funding amount requested
+IS_SUCCESSFUL—Was the money used effectively
+
+- Preprocessing Data for a Neural Network Model
+- Compile, Train, and Evaluate the Model
+- Optimize the Model
+- A Written Report on the Neural Network Model (README.md)
+
+#### Summary
+
 1. What variable(s) are considered the target for your model?
 Is-Successful
----
-2. What variable(s) are considered to be the features for your model?
-ANSWER: The features of this model are the NAME, APPLICATION, TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, INCOME_AMT,SPECIAL_CONSIDERATIONS, STATUS, and ASK_AMT
----
-3. What variable(s) are neither and should be removed from the input data? 
-ANSWER:  EIN (Employer identificaiton) was dropped because the numbers could confuse the system into thinking its significant.
-ANSWER: A student could drop SPECIAL_CONSIDERATIONS because there is only a small percentage of cases that had any special consideration, and special considerations cannot be quantified.
-ANSWER: A student could drop STATUS because  all rows were the same value, 1.
-Compiling, Training, and Evaluating the Model
-How many neurons, layers, and and activation functions did you select for your neural network model, and why? ANSWER: In this model there are three hidden layers each with many neurons, because this seeemed to increased the accuracy above 75%. The number of epochs wasn't changed. The first activation function was 'relu' but the 2nd and 3rd were 'sigmoid'and the output function was 'sigmoid'. Changing the 2nd and 3rd activation functions to 'sigmoid' also helped boost the accuracy.
-Were you able to achieve the target model performance? ANSWER: Yes
-What steps did you take to try and increase model performance? ANSWER: It required converting the NAME column into data points, which has the biggest impact on improving efficiency. And, it also required adding a third layer and using the "sigmoid" activation function for the 2nd and 3rd layer.
+
+2. 
+EIN and NAME—Identification columns
+APPLICATION_TYPE—Alphabet Soup application type
+AFFILIATION—Affiliated sector of industry
+CLASSIFICATION—Government organization classification
+USE_CASE—Use case for funding
+ORGANIZATION—Organization type
+STATUS—Active status
+INCOME_AMT—Income classification
+SPECIAL_CONSIDERATIONS—Special consideration for application
+ASK_AMT—Funding amount requested
+IS_SUCCESSFUL—Was the money used effectively
+
+
+Wat variable(s) are neither and should be removed from the input data? 
+EIN
+
+3 Hidden Layers resulting in an accuracy score greater than 75%. Multiple neurons per layer, with unchanging epochs 
+
+Were you able to achieve the target model performance? 
+Yes, was able to acheive the target model preformance score
+
+What steps did you take to try and increase model performance? 
+Adding multiple layers and filtering information such as NAMES that was impacting teh score 
+
+
